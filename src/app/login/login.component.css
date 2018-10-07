@@ -1,0 +1,91 @@
+.body{
+    width: 25%;
+    height: 702px;
+    margin-left: 38%;
+    margin-top: -3%;
+}
+input{
+    font-family: OpenSansHebrew;
+color:  #969696;
+font-size: 20.82px;
+font-weight: 300;
+line-height: 32.396px;
+text-align: right;
+transform: scaleY(1.0002);
+}
+.submit{
+    border-radius: 5px;
+background-color:  #bf8ec0;
+box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+width: 320px;
+height: 70px;
+font-family: OpenSansHebrew;
+color:  #ffffff;
+font-size: 29.18px;
+font-weight: 700;
+line-height: 24.376px;
+text-align: center;
+transform: scaleX(1.0096);
+margin-right: 15%;
+}
+
+.h3{
+    font-family: OpenSansHebrew;
+color:  #545454;
+font-size: 35.49px;
+font-weight: 300;
+line-height: 24.376px;
+text-align: center;
+transform: scaleY(1.0002);
+margin-right: 6%;
+}
+.logo{
+    width: 80%;
+height: 190px;
+background-image: url('../../images/logo&text-2.png');
+background-repeat: round;
+margin-right: 13%;
+margin-top: 50%;
+margin-bottom: 10%;
+}
+.mat-form-field-infix{
+    width: 360px !important;
+}
+.line1{
+    background-color:  #545454;
+width: 146px;
+height: 1px;
+margin-right: 35%;
+}
+.line2{
+    background-color:  #545454;
+width: 54px;
+height: 1px;
+margin-right: 47%;
+margin-top: 7%;
+}
+.forget{
+    float: left;
+}
+.register, a{
+    font-family: OpenSansHebrew;
+    color:  #969696;
+    font-size: 17.51px;
+    font-weight: 300;
+    line-height: 32.396px;
+    text-align: center;
+    transform: scaleY(1.0002);
+}
+a{
+    text-decoration: underline;
+   
+}
+.registerN{
+    font-weight: bold;
+    color: rgb(69, 195, 211);
+}
+.text{
+    width: 100%;
+    font-size: large;
+    
+}

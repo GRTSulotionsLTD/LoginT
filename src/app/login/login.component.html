@@ -1,0 +1,32 @@
+
+<div class="body" dir="rtl">
+  <form name="form" (ngSubmit)="Loginform.form.valid&&onSubmit()" #Loginform="ngForm" novalidate>
+    <div class="logo"></div>
+    <div class="line1"></div>
+    <p class="h3">כניסה למערכת</p>
+    <div class="line2"></div>
+    <mat-form-field class="text">
+      <input   matInput placeholder="כתובת מייל:" [(ngModel)]="model.email" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" #email="ngModel" required>
+        <mat-error [hidden]="email.valid || email.pristine">
+          <div [hidden]="!email.hasError('required')">  חובה להקיש מייל</div>
+          <div [hidden]="!email.hasError('pattern')"> מייל חייב להיות בצורה הבאה<small><b>joe@abc.com</b></small></div>
+        </mat-error>
+    </mat-form-field>
+
+
+    <mat-form-field class="text">
+      <input class="text" matInput name="password" [(ngModel)]="model.password" required #password="ngModel" placeholder="סיסמה:"  [type]="hide ? 'password' : 'password'">
+        <mat-error [hidden]="password.pristine">
+          <div [hidden]="!password.hasError('required')">חובה להקיש סיסמא</div>
+        </mat-error>
+    </mat-form-field>
+
+    <div>
+       <a class="forget">שכחתי סיסמא</a>
+    </div>
+
+    <input type="submit" class="submit"   value="כניסה" [disabled]="!Loginform.form.valid">
+    <p class="register" >עדין לא רשום? <a class="registerN">הרשם עכשיו</a></p>
+    
+  </form>
+</div>
